@@ -66,13 +66,13 @@ var orm = {
 
         console.log(queryString);
         connection.query(queryString, function (err, result) {
-            iff (err) {
+            if (err) {
                 throw err;
             }
             cb(result);
         });
     },
-    delete: function ((table, condition, cb)) {
+    delete: function(table, condition, cb) {
         var queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
         queryString += condition;
