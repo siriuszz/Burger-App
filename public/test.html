@@ -8,13 +8,14 @@
     <script src="/assets/js/burgers.js"></script>
 </head>
 <body>
+<div id = "container">
 <div class="center">
     <img src="assets/img/burger.png" alt="burger graphic">
 
     <h1>Eat-Da-Burger!</h1>
 </div>
 
-<div class= "center" id = not_devoured>
+<div class= "center" id = "not_devoured">
     <ul>
         {{#each burgers}}
         {{#unless devoured}}
@@ -24,7 +25,7 @@
     </ul>
 </div>
 
-<div class="center" id="devoured">
+<div class="center" id = "devoured">
     <ul>
         {{#each burgers}}
         {{#if devoured}}
@@ -45,6 +46,6 @@
         Enter a burger you want to eat and click the "Submit" button.
     </div>
 </form>
-
+</div>
 </body>
 </html>
